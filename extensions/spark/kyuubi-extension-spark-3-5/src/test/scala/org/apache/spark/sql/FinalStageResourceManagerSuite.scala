@@ -38,6 +38,9 @@ class FinalStageResourceManagerSuite extends KyuubiSparkSQLExtensionTest {
       .set(KyuubiSQLConf.FINAL_STAGE_CONFIG_ISOLATION.key, "true")
       .set(KyuubiSQLConf.FINAL_WRITE_STAGE_EAGERLY_KILL_EXECUTORS_ENABLED.key, "true")
   }
+  test("dddd"){
+    assert(1 == 1)
+  }
 
   test("[KYUUBI #5136][Bug] Final Stage hangs forever") {
     // Prerequisite to reproduce the bug:
